@@ -1,0 +1,21 @@
+{
+  "name": "@vxecli/import-vite-plugin-style-import",
+  "version": "0.1.0",
+  "description": "vxe-table 按需加载插件，使用 vite-plugin-style-import",
+  "scripts": {},
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "author": "Xu Liangzhan",
+  "license": "MIT"
+}
