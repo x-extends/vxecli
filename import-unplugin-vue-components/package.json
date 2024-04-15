@@ -1,6 +1,6 @@
 {
   "name": "@vxecli/import-unplugin-vue-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vxe-table 按需加载插件，使用 unplugin-vue-components",
   "scripts": {},
   "files": [

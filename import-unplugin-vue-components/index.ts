@@ -7,9 +7,9 @@ export function loadResolver (options?: {
   return {
     type: 'component',
     resolve (name: string) {
-      const vxeRest = name.match(/^Vxe(Module)?(\w+)$/)
+      const vxeRest = name.match(/^Vxe(\w+)$/)
       if (vxeRest) {
-        const dirName = XEUtils.kebabCase(vxeRest[2])
+        const dirName = XEUtils.kebabCase(vxeRest[1])
         const path = 'vxe-table/es'
         const conf: {
           name: string
