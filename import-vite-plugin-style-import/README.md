@@ -24,7 +24,9 @@ export default defineConfig({
     // ...,
     createStyleImportPlugin({
       resolves: [
-        VxeTableResolve()
+        VxeTableResolve({
+          importStyle: false
+        })
       ]
     })
   ]

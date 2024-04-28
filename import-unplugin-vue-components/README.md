@@ -24,7 +24,9 @@ export default defineConfig({
     // ...,
     Components({
       resolvers: [
-        VxeTableResolver()
+        VxeTableResolver({
+          importStyle: false
+        })
       ]
     })
   ]
