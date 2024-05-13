@@ -17,7 +17,7 @@ npm install vite-plugin-style-import @vxecli/import-vite-plugin-style-import
 ```javascript
 // ...
 import { createStyleImportPlugin } from 'vite-plugin-style-import'
-import VxeTableResolve from '@vxecli/import-vite-plugin-style-import'
+import { VxeTableResolve } from '@vxecli/import-vite-plugin-style-import'
 
 export default defineConfig({
   plugins: [

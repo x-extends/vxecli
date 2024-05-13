@@ -17,7 +17,7 @@ npm install unplugin-vue-components @vxecli/import-unplugin-vue-components
 ```javascript
 // ...
 import Components from 'unplugin-vue-components/vite'
-import VxeTableResolver from '@vxecli/import-unplugin-vue-components'
+import { VxeTableResolver } from '@vxecli/import-unplugin-vue-components'
 
 export default defineConfig({
   plugins: [
@@ -40,7 +40,7 @@ export default defineConfig({
 ```javascript
 // ...
 import Components from 'unplugin-vue-components/webpack'
-import VxeTableResolver from '@vxecli/import-unplugin-vue-components'
+import { VxeTableResolver } from '@vxecli/import-unplugin-vue-components'
 
 export default defineConfig({
   plugins: [
