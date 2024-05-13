@@ -1,8 +1,10 @@
 import { ComponentResolver } from 'unplugin-vue-components'
 
-export default function loadResolver(options?: {
+export function VxeTableResolver(options?: {
   /**
    * 是否导入样式
    */
   importStyle?: boolean
 }): ComponentResolver
+
+export default VxeTableResolver
