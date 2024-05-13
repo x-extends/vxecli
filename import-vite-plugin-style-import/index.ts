@@ -1,4 +1,4 @@
-export function loadResolver (options?: {
+export function VxeTableResolve (options?: {
   /**
    * 是否导入样式
    */
@@ -23,4 +23,4 @@ export function loadResolver (options?: {
   return conf
 }
 
-export default loadResolver
+export default VxeTableResolve

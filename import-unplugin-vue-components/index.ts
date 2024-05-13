@@ -1,6 +1,6 @@
 import XEUtils from 'xe-utils'
 
-export function loadResolver (options?: {
+export function VxeTableResolver (options?: {
   importStyle?: boolean
 }) {
   const opts = Object.assign({ importStyle: true }, options)
@@ -28,4 +28,4 @@ export function loadResolver (options?: {
   }
 }
 
-export default loadResolver
+export default VxeTableResolver
