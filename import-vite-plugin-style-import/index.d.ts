@@ -7,6 +7,9 @@ export function VxeTableResolve(options?: {
   importStyle?: boolean
 }): Lib
 
+/**
+ * 按需加载 Vxe 组件
+ */
 export function VxeResolve(options: {
   /**
    * 包名
