@@ -1,5 +1,10 @@
 import { Lib } from 'vite-plugin-style-import'
 
+/**
+ * 请使用 VxeResolve({ libraryName: 'vxe-table' })
+ * @deprecated
+ * @param options
+ */
 export function VxeTableResolve(options?: {
   /**
    * 是否导入样式

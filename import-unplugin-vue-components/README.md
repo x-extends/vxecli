@@ -1,6 +1,6 @@
 # @vxecli/import-unplugin-vue-components
 
-用于 vxe-table 中使用 [unplugin-vue-components](https://www.npmjs.com/package/unplugin-vue-components) 来按需加载
+用于 Vxe 系组件中使用 [unplugin-vue-components](https://www.npmjs.com/package/unplugin-vue-components) 来按需加载
 
 ## Insert
 
@@ -17,15 +17,20 @@ npm install unplugin-vue-components @vxecli/import-unplugin-vue-components
 ```javascript
 // ...
 import Components from 'unplugin-vue-components/vite'
-import { VxeTableResolver } from '@vxecli/import-unplugin-vue-components'
+import { VxeResolver } from '@vxecli/import-unplugin-vue-components'
 
 export default defineConfig({
   plugins: [
     // ...,
     Components({
       resolvers: [
-        VxeTableResolver({
-          // importStyle: false
+        VxeResolver({
+          libraryName: 'vxe-table'
+          // importStyle: true
+        }),
+        VxeResolver({
+          libraryName: 'vxe-pc-ui'
+          // importStyle: true
         })
       ]
     })
@@ -40,14 +45,21 @@ export default defineConfig({
 ```javascript
 // ...
 import Components from 'unplugin-vue-components/webpack'
-import { VxeTableResolver } from '@vxecli/import-unplugin-vue-components'
+import { VxeResolver } from '@vxecli/import-unplugin-vue-components'
 
 export default defineConfig({
   plugins: [
     // ...,
     Components({
       resolvers: [
-        VxeTableResolver()
+        VxeResolver({
+          libraryName: 'vxe-table'
+          // importStyle: true
+        }),
+        VxeResolver({
+          libraryName: 'vxe-pc-ui'
+          // importStyle: true
+        })
       ]
     })
   ]

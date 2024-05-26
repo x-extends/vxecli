@@ -30,7 +30,7 @@ export function VxeTableResolver (options?: {
 
 const VxeTableComponentRE = /^Vxe(Table|Grid|Column|Colgroup|Toolbar)$/
 
-function hasVxeTableComponent (name) {
+function hasVxeTableComponent (name: string) {
   return name && name.match(VxeTableComponentRE)
 }
 

@@ -1,5 +1,10 @@
 import { ComponentResolver } from 'unplugin-vue-components'
 
+/**
+ * 请使用 VxeResolver({ libraryName: 'vxe-table' })
+ * @deprecated
+ * @param options
+ */
 export function VxeTableResolver(options?: {
   /**
    * 是否导入样式
