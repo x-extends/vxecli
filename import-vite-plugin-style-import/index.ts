@@ -52,4 +52,9 @@ export function VxeResolve (options: {
   return conf
 }
 
-export default VxeTableResolve
+const ImportPlugin = {
+  VxeTableResolve,
+  VxeResolve
+}
+
+export default ImportPlugin

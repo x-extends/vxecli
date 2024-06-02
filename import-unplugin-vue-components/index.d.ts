@@ -26,4 +26,19 @@ export function VxeResolver(options: {
   importStyle?: boolean
 }): ComponentResolver
 
-export default VxeTableResolver
+type ImportPluginObj = {
+  /**
+   * 请使用 VxeResolver({ libraryName: 'vxe-table' })
+   * @deprecated
+   * @param options
+   */
+  VxeTableResolver: typeof VxeTableResolver
+  /**
+   * 按需加载 Vxe 组件
+   */
+  VxeResolver: typeof VxeResolver
+}
+
+declare const ImportPlugin: ImportPluginObj
+
+export default ImportPlugin

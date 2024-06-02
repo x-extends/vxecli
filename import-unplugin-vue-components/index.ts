@@ -97,4 +97,9 @@ export function VxeResolver (options: {
   return handleMaps[opts.libraryName]
 }
 
-export default VxeTableResolver
+const ImportPlugin = {
+  VxeTableResolver,
+  VxeResolver
+}
+
+export default ImportPlugin
